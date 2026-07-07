@@ -5,7 +5,7 @@
 
 const CONFIG = {
 
-    API_URL: "https://script.google.com/macros/s/AKfycbxnfKzj1Fdd31lNaRgEveoz_Fk0z28tB61LhTRry6pFdZTfSZb3HXtzV0YF6opYdjoC/exec",
+    API_URL: "https://script.google.com/macros/s/AKfycbwGn_3auHtQ2om5Dr_rFlLGlK3JLrWWQoxANtIojN9C9j92-J8BozH7C-QGKg4BeJU2jw/exec",
 
     REFRESH_TIME: 2000,
 

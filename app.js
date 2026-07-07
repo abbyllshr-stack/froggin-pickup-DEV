@@ -175,8 +175,13 @@ function mostrarPantallaReposicion(datos){
 
             <option ${datos.teacher=="Chantal"?"selected":""}>Chantal</option>
 
-            <option ${datos.teacher=="Mariana"?"selected":""}>Mariana</option>
+            <option ${datos.teacher=="Abril"?"selected":""}>Mariana</option>
+          
+            <option ${datos.teacher=="Edwin"?"selected":""}>Angel</option>
 
+            <option ${datos.teacher=="Yessica"?"selected":""}>Chantal</option>
+
+            <option ${datos.teacher=="Ana"?"selected":""}>Mariana</option>
         </select>
 
         <br><br>

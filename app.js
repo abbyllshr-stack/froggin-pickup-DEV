@@ -1,5 +1,5 @@
 // ==========================================
-// FROGGIN PICKUP DEV v1.1
+// FROGGIN PICKUP v1.1
 // ==========================================
 
 // ---------- CONFIGURACIÓN ----------
@@ -309,26 +309,25 @@ async function cargarPendientes(){
 
         alumnos.forEach(alumno => {
 
-    const emoji =
-        alumno.estado === "Entregado"
-            ? "✅"
-            : "🟡";
+            lista.innerHTML += `
+                <div class="alumnoPendiente">
 
-    lista.innerHTML += `
-        <div class="alumnoPendiente">
+                    <strong>${alumno.alumno}</strong><br>
 
-            <strong>${emoji} ${alumno.alumno}</strong><br>
+                    ${alumno.grupo}
 
-            ${alumno.grupo}<br>
+                </div>
+            `;
 
-            👩‍🏫 ${alumno.teacher}<br>
+        });
 
-            <strong>${alumno.estado}</strong>
+    }catch(error){
 
-        </div>
-    `;
+        console.error(error);
 
-});
+    }
+
+}
 
 // ==========================================
 // INTERFAZ

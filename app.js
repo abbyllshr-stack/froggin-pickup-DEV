@@ -309,25 +309,26 @@ async function cargarPendientes(){
 
         alumnos.forEach(alumno => {
 
-            lista.innerHTML += `
-                <div class="alumnoPendiente">
+    const emoji =
+        alumno.estado === "Entregado"
+            ? "✅"
+            : "🟡";
 
-                    <strong>${alumno.alumno}</strong><br>
+    lista.innerHTML += `
+        <div class="alumnoPendiente">
 
-                    ${alumno.grupo}
+            <strong>${emoji} ${alumno.alumno}</strong><br>
 
-                </div>
-            `;
+            ${alumno.grupo}<br>
 
-        });
+            👩‍🏫 ${alumno.teacher}<br>
 
-    }catch(error){
+            <strong>${alumno.estado}</strong>
 
-        console.error(error);
+        </div>
+    `;
 
-    }
-
-}
+});
 
 // ==========================================
 // INTERFAZ
